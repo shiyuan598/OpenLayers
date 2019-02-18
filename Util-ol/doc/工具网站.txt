@@ -1,0 +1,25 @@
+1.矢量数据格式转换，shp转为geojson
+http://mapshaper.org/
+http://2geojson.com/
+
+2.图片转为Base64编码
+http://www.vgot.net/test/image2base64.php?
+
+3.openlayers例子
+Custom Animation 点闪烁
+http://openlayers.org/en/latest/examples/feature-animation.html
+
+Maker Animation 按照路线移动
+http://openlayers.org/en/latest/examples/feature-move-animation.html
+
+Flight Animation 飞行路线
+http://openlayers.org/en/latest/examples/flight-animation.html
+
+Layer Swipe 图层卷帘
+http://openlayers.org/en/latest/examples/layer-swipe.html
+
+带三角形的提示框
+http://openlayers.org/en/latest/examples/overlay.html
+
+提示 popup
+http://openlayers.org/en/latest/examples/popup.html

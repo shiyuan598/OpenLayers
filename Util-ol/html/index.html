@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>OpenLayers</title>
+  <link rel="stylesheet" href="../css/ol.css">
+  <link rel="stylesheet" href="../css/map.css">
+  <link rel="stylesheet" href="../css/measure.css">
+  <link rel="stylesheet" href="../css/overlay.css">
+  <script data-main="../js/main" src="../js/lib/require.js"></script>
+</head>
+
+<body>
+
+  <div id="popup" class="ol-popup">
+    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+    <div id="popup-content"></div>
+  </div>
+  <div id="pointInfo">
+  </div>
+  <div id="map" class="map">
+  </div>
+  <div id="measure-select">
+    <label for="">测量类型：</label>
+    <select name="" id="type">
+      <option value="LineString">距离</option>
+      <option value="Polygon">面积</option>
+      <option value="Point">点</option>
+      <option value="MultiPolygon">MultiPolygon</option>
+    </select>
+    <button id = "startMeasure">开始测量</button>
+    <button id = "exitMeasure" disabled="disabled">退出测量</button>
+    <button id = "click-select">选择</button>
+  </div>
+  <div id="mousePosition" class="mousePosition">
+  </div>
+  <a id="export-png" class="btn btn-default"><i class="fa fa-download"></i> Download PNG</a>
+
+</body>
+
+</html>
