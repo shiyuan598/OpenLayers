@@ -2,9 +2,7 @@ define([
     'ol'
 ], function(ol) {
     'use strict';
-    // function get
-
-
+   
     var controls = {
         getAttributionControl: function(){
             return new ol.control.Attribution({                

@@ -11,7 +11,7 @@ define(function(){
       ctx.drawImage(img, 0, 0, img.width, img.height);
       var dataURL = canvas.toDataURL("image/png");
       return dataURL;
-    },
+    }
 
   };
   return img2base64;

@@ -132,6 +132,15 @@ define([
         })
     });
 
+    //谷歌离线瓦片
+    var offlineGoogleMapLayer = new ol.layer.Tile({
+        source: new ol.source.XYZ({
+            // 设置本地离线瓦片所在路径，由于例子里面只有一张瓦片，页面显示时就只看得到一张瓦片。
+            // url: 'http://localhost:8080/googlemaps/roadmap/{z}/{x}/{y}.png'
+            url: '../resource/offlineMapTile/googleMap/{z}/{x}/{y}.png'
+        })
+    });
+   
     var layers = {
         OSM: OSM, //Open Street Map
         tiandituSatellite: tiandituSatellite, //天地图卫星影像（无标注）
@@ -143,6 +152,7 @@ define([
         baiduMapLabel: baiduMapLabel, //百度地图无标注
         googleMap: googleMap, //谷歌地图
         googleRaster: googleRaster, //谷歌影像
+        offlineGoogleMapLayer: offlineGoogleMapLayer//离线谷歌地图
     };
     return layers;
 });

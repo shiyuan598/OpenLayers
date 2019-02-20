@@ -8,7 +8,6 @@ require.config({
     "layers": "layers",
     "measure": "measure",
     "select": "select",
-    "saveAs": "lib/saveas",
     "img2base64": "lib/img2base64",
   },
   shim: {
