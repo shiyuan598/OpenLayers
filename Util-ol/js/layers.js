@@ -10,14 +10,15 @@ define([
     var tiandituSatellite = new ol.layer.Tile({
         title: "天地图卫星影像",
         source: new ol.source.XYZ({
-            url: 'http://t3.tianditu.cn/DataServer?T=img_w&X={x}&Y={y}&L={z}'
+            url: 'http://t3.tianditu.cn/DataServer?T=img_w&X={x}&Y={y}&L={z}&tk=45c78b2bc2ecfa2b35a3e4e454ada5ce'
         }),
+        //http://t0.tianditu.gov.cn/cia_w/wmts
         // projection: 'EPSG:4326'
     });
     var tiandituSatelliteLabel = new ol.layer.Tile({
         title: "天地图卫星影像标注",
         source: new ol.source.XYZ({
-            url: 'http://t3.tianditu.cn/DataServer?T=cia_w&X={x}&Y={y}&L={z}'
+            url: 'http://t3.tianditu.cn/DataServer?T=cia_w&X={x}&Y={y}&L={z}&tk=45c78b2bc2ecfa2b35a3e4e454ada5ce'
         }),
         // projection: 'EPSG:3857'
     });
@@ -25,13 +26,13 @@ define([
     var tiandituRoad = new ol.layer.Tile({
         title: "天地图路网",
         source: new ol.source.XYZ({
-            url: "http://t4.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}"
+            url: "http://t4.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=45c78b2bc2ecfa2b35a3e4e454ada5ce"
         })
     });
     var tiandituAnnotation = new ol.layer.Tile({
         title: "天地图文字标注",
         source: new ol.source.XYZ({
-            url: 'http://t3.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}'
+            url: 'http://t3.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=45c78b2bc2ecfa2b35a3e4e454ada5ce'
         })
     });
 
@@ -134,9 +135,8 @@ define([
 
     //谷歌离线瓦片
     var offlineGoogleMapLayer = new ol.layer.Tile({
-        source: new ol.source.XYZ({
-            // 设置本地离线瓦片所在路径，由于例子里面只有一张瓦片，页面显示时就只看得到一张瓦片。
-            // url: 'http://localhost:8080/googlemaps/roadmap/{z}/{x}/{y}.png'
+        source: new ol.source.XYZ({            
+            // url: '../resource/offlineMapTile/googleImg/{z}/{x}/{y}.png'
             url: '../resource/offlineMapTile/googleMap/{z}/{x}/{y}.png'
         })
     });
